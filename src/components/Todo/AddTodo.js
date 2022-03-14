@@ -19,6 +19,16 @@ const AddTodo = () => {
 		context.addTodoItem(todo);
 	};
 
+	// const filterHandler = (e) => {
+	// 	console.log('filter button was clicked');
+
+	// 	const doneTasksArray = context.notes.filter((item) =>
+	// 		item.done ? 'task is done' : 'task is not done'
+	// 	);
+	// 	console.log(doneTasksArray);
+
+	// };
+
 	return (
 		<form onSubmit={addHandler} className={classes.input}>
 			<div>
@@ -30,6 +40,7 @@ const AddTodo = () => {
 				<input type="text" id="task" name="task" onChange={changeHandler} />
 			</div>
 			<Button type="submit">Add Task</Button>
+			{/* <Button onClick={filterHandler}>Show done tasks</Button> */}
 		</form>
 	);
 };

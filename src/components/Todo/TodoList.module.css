@@ -1,16 +1,28 @@
 .todos {
-  margin: 2rem auto;
-  width: 90%;
-  max-width: 40rem;
+	margin: 2rem auto;
+	width: 90%;
+	max-width: 40rem;
 }
 
 .todos ul {
-  list-style: none;
-  padding: 1rem;
+	list-style: none;
+	padding: 1rem;
 }
 
 .todo {
-  border: 1px solid #ccc;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
+	border: 1px solid #ccc;
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.todo.done {
+	text-decoration: line-through;
+	color: grey;
+}
+
+.delete {
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
 }
